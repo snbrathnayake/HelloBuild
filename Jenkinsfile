@@ -11,9 +11,18 @@ pipeline {
                 javac com/unknown/test/Hello.java
                 java com/unknown/test/Hello
                 '''
-
-                bat 'dir'
+                echo '================== Build is Completed ==============='
             }
+              stage('Test') {
+                        steps {
+                             echo '================== Build is Completed ==============='
+                        }
+                    }
+                    stage('Deploy') {
+                        steps {
+                            echo '================== Build is Completed ==============='
+                        }
+                    }
         }
     }
 }
