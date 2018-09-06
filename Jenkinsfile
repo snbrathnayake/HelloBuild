@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                  bat '''
-                      bat 'dir cd src'
-                      bat 'dir'
+                      dir cd src
+                      dir
                  '''
             }
         }
