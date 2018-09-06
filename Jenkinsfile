@@ -4,12 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'cd src'
-                bat 'dir'
                  bat '''
-                                echo 'Multiline'
-                                echo 'Example'
-                             '''
+                      bat 'dir cd src'
+                      bat 'dir'
+                 '''
             }
         }
         stage('Test') {
