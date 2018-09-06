@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 bat '''
-                      dir cd src
-                      dir
-                 '''
+                sh 'make check || true' 
             }
         }
         stage('Test') {
