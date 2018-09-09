@@ -11,8 +11,8 @@ public class TestJunit {
 
     @Test
     public void testTotal() {
-        String res = Hello.verifire(4);
-        assertEquals(res , "Even");
+        String res = hello.verifire(4);
+        assertEquals(res, "Even number");
     }
 
 }
