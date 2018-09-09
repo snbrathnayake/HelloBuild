@@ -6,12 +6,10 @@ import static  org.junit.Assert.*;
 
 
 public class TestJunit {
-
-    Hello hello = new Hello();
-
+    // test case
     @Test
     public void testTotal() {
-        String res = hello.verifire(4);
+        String res = new Hello().verifire(4);
         assertEquals(res, "Even number");
     }
 
