@@ -10,9 +10,9 @@ public class Hello {
     public static String verifire(int number) {
 
         if (number % 2 == 0) {
-            return "Even";
+            return "Even number";
         } else {
-            return "Odd";
+            return "Odd number";
         }
     }
 }
