@@ -16,14 +16,14 @@ pipeline {
                     steps {
                         bat '''
                         set PATH=C:/Program Files/Java/jdk1.8.0_45/bin
-                        cd C:\Program Files (x86)\Jenkins\workspace
+                        cd C:/Program Files (x86)/Jenkins/workspace
 
-                        copy junit-4.12.jar Hello\src
-                        copy hamcrest-core-1.3.jar Hello\src
+                        copy junit-4.12.jar Hello/src
+                        copy hamcrest-core-1.3.jar Hello/src
 
-                        cd Hello\src
+                        cd Hello/src
 
-                        javac -cp junit-4.12.jar com\edesk\test\Person.java com\edesk\test\PersonTest.java
+                        javac -cp junit-4.12.jar com/edesk/test/Person.java com/edesk/test/PersonTest.java
 
                         java -cp junit-4.12.jar;hamcrest-core-1.3.jar;. org.junit.runner.JUnitCore com.edesk.test.PersonTest
 
