@@ -3,16 +3,10 @@ package com.edesk.test;
 public class Hello {
 
     public static void main(String[] args) {
-        String result = new Hello().verifire(5);
-        System.out.println("Enter number is : " + result);
-    }
+        Person person = new Person("SAMEERA", 27);
+        String user = person.getPersonName();
+        int age = person.getPersonAge();
 
-    public String verifire(int number) {
-
-        if (number % 2 == 0) {
-            return "Even number";
-        } else {
-            return "Odd number";
-        }
+        System.out.println("User : " + user + " he is " + age + " old");
     }
 }
